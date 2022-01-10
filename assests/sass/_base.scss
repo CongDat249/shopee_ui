@@ -1,0 +1,52 @@
+* {
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%;
+   line-height: 1.6rem;
+   font-family: 'Roboto', sans-serif;
+   box-sizing: border-box;
+}
+
+.grid,
+.container {
+   width: 1200px;
+   max-width: 100%;
+   margin: 0 auto;
+}
+
+.grid__full-width {
+   width: 100%;
+}
+
+.grid__row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.width--half {
+   width: 50%;
+}
+
+.width--full {
+   width: 100%;
+}
+
+.mr-10 {
+   margin-right: 10px;
+}
+
+.seperator {
+   position: relative;
+}
+
+.seperator::after {
+   content: "";
+   position: absolute;
+   right: 0;
+   top: 0.4rem;
+   height: 1.4rem;
+   width: 1px;
+   background-color:hsla(0,0%,100%,.22);
+}

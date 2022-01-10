@@ -1,0 +1,9 @@
+@mixin centerY {
+   display: inline-flex; 
+   align-items: center;
+}
+
+@mixin textHover {
+   cursor: pointer;
+   color: hsla(0,0%,100%,.7);
+}
