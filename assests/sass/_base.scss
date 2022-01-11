@@ -51,6 +51,14 @@ html {
    background-color:hsla(0,0%,100%,.22);
 }
 
+.flex {
+   display: flex;
+}
+
+.flex-centerY {
+   align-items: center;
+}
+
 @keyframes fadeIn {
    from {
       opacity: 0;

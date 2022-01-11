@@ -7,3 +7,11 @@
    cursor: $cursor;
    color: hsla(0,0%,100%,.7);
 }
+
+@mixin boxShadow {
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@mixin fadeIn {
+   animation: fadeIn 300ms ease 1;
+}
