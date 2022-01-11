@@ -50,3 +50,12 @@ html {
    width: 1px;
    background-color:hsla(0,0%,100%,.22);
 }
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}

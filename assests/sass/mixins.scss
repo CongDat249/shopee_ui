@@ -3,7 +3,7 @@
    align-items: center;
 }
 
-@mixin textHover {
-   cursor: pointer;
+@mixin textHover($cursor: pointer) {
+   cursor: $cursor;
    color: hsla(0,0%,100%,.7);
 }
