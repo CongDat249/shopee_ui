@@ -1,0 +1,44 @@
+mixin headerNavbarItem(text, modifier="", isRight=true, isLink=true)
+  li.header__navbar-item(class=`${modifier ? `header__navbar-item--${modifier}` : ""}`) 
+    if (block && !isRight)
+      block
+    if (isLink)
+      a.header__navbar-item-link(href="#")
+        span.header__navbar-text= text 
+    else 
+      span.header__navbar-text= text
+    if (block && isRight)
+      block
+    
+mixin infoBtn(text)
+  a.info__panel-link(href='#')
+    button.info__panel-link-btn
+      span.info__panel-link-btn-icon
+        if (block)
+          block
+        =text
+
+mixin infoRatingItem(text, value)
+  li.info__rating-item  
+    span.info__rating-item-icon
+      if (block) 
+        block 
+    span.info__rating-text
+      span.info__rating-text-name= text + ': '
+      span.info__rating-text-value= value
+
+mixin menuItem(text, modifier)
+  a.menu__item(class=`${modifier ? `menu__item--${modifier}`: ""}`, href="#") 
+    span= text
+
+mixin menuDropdownItem(text)
+  a(href="#").menu__more-dropdown-item= text
+
+mixin discountItem(price, limit, date) 
+  .discount__item 
+    .discount__item-content
+      h4.discount__item-price= `Giảm ₫${price}k`
+      p.discount__item-limit= `Đơn Tối Thiểu ₫${limit}k`
+      p.discount__item-date= `HSD: ${date}`
+    .discount__item-btn 
+      btn.discount__item-btn-save Lưu

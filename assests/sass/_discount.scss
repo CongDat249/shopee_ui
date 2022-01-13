@@ -1,0 +1,80 @@
+.discount {
+  padding: 20px 30px 35px;
+  margin: 30px 0 10px;
+  background-color: #fff;
+
+  &__title {
+    font-size: 1.6rem;
+    color: #000000CC;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  &__list {
+    display: flex;
+    padding-top: 5px;
+    margin-left: -8px;
+  }
+
+  &__item {
+    width: 343px;
+    height: 108px;
+    padding-top: 5px;
+    padding-left: 7px;
+    display: flex;
+    margin: 0 8px;
+    color: #D0011B;
+    background-color: #fff4f4;
+    border: 1px solid #f8d0d3;;
+    box-shadow:  rgba(0, 0, 0, 0.07) 2px 2px 5px 0px;
+
+    &-content {
+      width: 100%;
+      padding-right: 3px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    &-price {
+      font-size: 1.6rem;
+      line-height: 2rem;
+      font-weight: 400;
+      margin: 0;
+      margin-bottom: 4px;
+    }
+
+    &-limit {
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      margin: 0;
+    }
+
+    &-date {
+      margin: 5px 5px 0 0;
+      color: $text-color-dark;
+    }
+
+    &-btn {
+      width: 84px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-save {
+        width: 60px;
+        height: 28px;
+        padding: 0 9px;
+        margin: 0 12px;
+        font-size: 1.4rem;
+        background-color: $primary-color;
+        color: #fff;
+        line-height: 2.8rem;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -2,9 +2,12 @@
   width: 100%;
   height: 70px;
   padding-top: 20px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  background-color: #fff;
 
   &__list {
     padding: 0;
+    margin: 0;
     display: flex;
     list-style: none;
   }
@@ -20,10 +23,121 @@
       flex: 1;
       padding: 14px 10px;
       font-size: 1.5rem;
+      line-height: 1.8rem;
       text-align: center;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+
+    &--active {
+      color: $primary-color;
+      border-bottom: 4px solid $primary-color;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+
+  }
+
+  &__more {
+    position: relative;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 1.5rem;
+    color: $text-color-dark;
+    cursor: pointer;
+
+    &-icon {
+      width: 9px;
+      height: 9px;
+      margin-left: 5px;
+      transition: 500ms;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      width: 1px;
+      height: 20px;
+      background-color:  rgba(0, 0, 0, .09);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 35px;
+      right: 0;
+      width: 150px;
+      height: 50px;
+      background-color: red;
+      opacity: 0;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    &:hover &-icon {
+      fill: $primary-color;
+      transform: rotateZ(-180deg);
+    }
+
+    &:hover &-dropdown {
+      display: flex;
+    }
+
+    &:hover &-dropdown-arrow {
+      display: block;
+    }
+
+    &-dropdown {
+      display: none;
+      position: absolute;
+      z-index: 99;
+      top: 70px;
+      right: 0;
+      width: 350px;
+      height: 300px;
+      padding-left: 20px;
+      flex-direction: column;
+      overflow-y: scroll;
+      border: 1px solid rgba(0, 0, 0, .09);
+      background-color: #fff;
+      @include boxShadow;
+      @include fadeIn;
+
+      &-arrow {
+        display: none;
+        content: "";
+        position: absolute;
+        top: 60px;
+        right: 15px;
+        // z-index: -2;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        transform: rotateZ(45deg);
+        border-left: 1px solid rgba(0, 0, 0, .09);
+        border-top: 1px solid rgba(0, 0, 0, .09);
+        @include fadeIn;
+      }
+
+      &-item {
+        display: block;
+        padding: 16px 30px;
+        text-decoration: none;
+        color: $text-color-dark;
+
+        &:hover {
+          cursor: pointer;
+          color: $primary-color;
+        }
+      }
     }
   }
 }

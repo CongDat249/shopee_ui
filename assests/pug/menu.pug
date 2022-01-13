@@ -1,0 +1,25 @@
+nav.menu
+  .container 
+    ul.menu__list
+      +menuItem("Dạo", "active")
+      +menuItem("TẤT CẢ SẢN PHẨM")
+      +menuItem("💥 OUTLET- Siêu khuyến mãi upto 50%")
+      +menuItem("Coolmate Basics - Hàng tốt giá rẻ")
+      +menuItem("☀️ SALE ĐỒ HÈ")
+      +menuItem("Công nghệ HeiQ ViroBlock")
+
+      .menu__more Thêm
+        svg.menu__more-icon(enable-background='new 0 0 15 15' viewbox='0 0 15 15' x='0' y='0')
+          path(d='m6.5 12.9-6-7.9s-1.4-1.5.5-1.5h13s1.8 0 .6 1.5l-6 7.9c-.1 0-.9 1.3-2.1 0z')
+        .menu__more-dropdown
+          +menuDropdownItem("Care & Share")
+          +menuDropdownItem("ĐỒ THU ĐÔNG")
+          +menuDropdownItem("ÁO THUN NAM")
+          +menuDropdownItem("ÁO POLO NAM")
+          +menuDropdownItem("QUẦN SHORT NAM")
+          +menuDropdownItem("QUẦN SỊP NAM")
+          +menuDropdownItem("TẤT/VỚ NAM")
+          +menuDropdownItem("PHỤ KIỆN")
+        
+        .menu__more-dropdown-arrow
+
