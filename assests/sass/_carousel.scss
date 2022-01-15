@@ -1,17 +1,33 @@
 .carousel {
-  &__1 {
-    width: 1200px;
-    height: 400px;
-    margin: 0 auto 20px;
-    background-image: url('../images/carousel_1.jpeg');
-    background-size: cover;
-  }
+   &__1 {
+      width: 1200px;
+      height: 400px;
+      margin: 0 auto 20px;
+      background-image: url("../images/carousel_1.jpeg");
+      background-size: cover;
+   }
 
-  &__2 {
-    width: 1200px;
-    height: 400px;
-    margin: 0 auto;
-    background-image: url('../images/carousel_2.jpeg');
-    background-size: cover;
-  }
+   &__2 {
+      width: 1200px;
+      height: 400px;
+      margin: 0 auto;
+      background-image: url("../images/carousel_2.jpeg");
+      background-size: cover;
+   }
+
+   &__3 {
+      width: 1200px;
+      height: 400px;
+      margin: 0 auto;
+      background-image: url("../images/carousel_3.jpeg");
+      background-size: cover;
+   }
+
+   &__4 {
+      width: 1200px;
+      height: 600px;
+      margin: 0 auto;
+      background-image: url("../images/carousel_4.jpeg");
+      background-size: cover;
+   }
 }

@@ -1,0 +1,141 @@
+.products {
+  margin: 30px 0 80px;
+  &__category {
+
+    &-title {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 0 0 10px 0;
+      padding: 0;
+      font-size: 1.6rem;
+      color: rgba(0, 0, 0, 0.8);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    &-list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+    }
+
+    &-item {
+      padding: 8px 10px 8px 12px;
+      font-size: 1.4rem;
+      color: #000000DE;
+      cursor: pointer;
+
+      &--active {
+        position: relative;
+        color: $primary-color;
+
+        &::before {
+          position: absolute;
+          left: 0px;
+          content: "";
+          border: 5px solid $primary-color;
+          border-color: transparent transparent transparent $primary-color;
+        }
+      }
+    }
+  }
+
+  &__filters {
+    height: 60px;
+    padding: 13px 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.03);
+
+    &-label {
+      font-size: 1.4rem;
+      color: #555555;
+    }
+
+    &-option {
+      height: 34px;
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+      font-size: 1.4rem;
+      color: #000000CC;
+      cursor: pointer;
+
+      &-item {
+        margin-left: 10px;
+        padding: 0 15px;
+        line-height: 34px;
+        background-color: #fff;
+
+        &--active {
+          color: #fff;
+          background-color: rgb(238, 77, 45);
+        }
+      }
+    }
+
+    &-controller {
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+
+      &-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+
+         &-current {
+           color: #D0011B;
+         }
+      }
+
+      &-btn {
+        width: 36px;
+        height: 34px;
+        padding: 0 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.26);
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,.09);
+
+        & i {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+
+    &-item {
+      width: 40px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      margin: 0 15px;
+      font-size: 2rem;
+
+      &--active {
+        color: #fff;
+        background-color: #D0011B;
+      }
+
+      &:hover {
+        color: #fff;
+        background-color: #f05d40;
+        cursor: pointer;
+      }
+    }
+  }
+}

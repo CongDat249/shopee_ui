@@ -36,8 +36,7 @@
 
 .card {
   position: relative;
-  flex-basis: 16.666%;
-  max-width: 16.666%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   margin: 0 5px;
@@ -76,10 +75,6 @@
 
     &-value {
       color: #EE4D2D;
-    }
-
-    &-desc {
-
     }
   }
 
