@@ -43,6 +43,7 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 5px;
+    background-color: #fbfbfb;
 
     &-col {
 
@@ -165,6 +166,68 @@
           color: #0000008A;
         }
       }
+    }
+  }
+
+  &__navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;  
+    
+    &-wrapper {
+      padding: 42px 0 37px;
+      background-color: #f5f5f5;
+    }
+
+    &-item {
+      padding: 0 25px;
+      font-size: 1.2rem;
+      color: #0000008A;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
+  &__license {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #000000A6;
+
+    &-list {
+      display: flex;
+      justify-content: center;
+      height: 48px;
+
+      &-item {
+        width: 120px;
+        height: 45px;
+        margin: 0 20px;
+        background: url(../images/logo.png);
+        background-size: 617.5% 393.3333333333333%;
+        background-position: 34.13848631239936% 84.0909090909091%;
+
+        &--logo2 {
+          width: 48px;
+          height: 48px;
+          background: url(../images/logo.png);
+          background-size: 1543.75% 368.75%;
+          background-position: 100% 35.65891472868217%;
+        }
+      }
+    }
+
+    &-name {
+      margin: 8px 0 25px;
+    }
+
+    &-text {
+      margin-top: 8px;
     }
   }
 }

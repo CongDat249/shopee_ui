@@ -1226,7 +1226,7 @@ html {
 }
 
 .products {
-  margin: 30px 0 80px;
+  margin: 30px 0 0;
 }
 .products__category-title {
   height: 50px;
@@ -1384,6 +1384,7 @@ html {
   max-width: 100%;
   margin: 0 auto;
   padding: 5px;
+  background-color: #fbfbfb;
 }
 .footer__section-col-title {
   margin: 40px 0 20px;
@@ -1484,6 +1485,59 @@ html {
 .footer__copyright-link-item a {
   text-decoration: none;
   color: #0000008A;
+}
+.footer__navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.footer__navbar-wrapper {
+  padding: 42px 0 37px;
+  background-color: #f5f5f5;
+}
+.footer__navbar-item {
+  padding: 0 25px;
+  font-size: 1.2rem;
+  color: #0000008A;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.footer__license {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #000000A6;
+}
+.footer__license-list {
+  display: flex;
+  justify-content: center;
+  height: 48px;
+}
+.footer__license-list-item {
+  width: 120px;
+  height: 45px;
+  margin: 0 20px;
+  background: url(../images/logo.png);
+  background-size: 617.5% 393.3333333333%;
+  background-position: 34.1384863124% 84.0909090909%;
+}
+.footer__license-list-item--logo2 {
+  width: 48px;
+  height: 48px;
+  background: url(../images/logo.png);
+  background-size: 1543.75% 368.75%;
+  background-position: 100% 35.6589147287%;
+}
+.footer__license-name {
+  margin: 8px 0 25px;
+}
+.footer__license-text {
+  margin-top: 8px;
 }
 
 /*# sourceMappingURL=app.css.map */
