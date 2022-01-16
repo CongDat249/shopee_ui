@@ -1457,5 +1457,33 @@ html {
 .footer__logo-item {
   width: 80px;
 }
+.footer__copyright {
+  font-size: 1.4rem;
+  padding: 40px 0;
+  display: flex;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: #0000008A;
+}
+.footer__copyright-content {
+  width: 30%;
+  margin-right: 25px;
+}
+.footer__copyright-link {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer__copyright-link-item {
+  padding: 0 5px;
+  border-right: 1px solid #0000008A;
+}
+.footer__copyright-link-item--no-border {
+  border: none;
+}
+.footer__copyright-link-item a {
+  text-decoration: none;
+  color: #0000008A;
+}
 
 /*# sourceMappingURL=app.css.map */

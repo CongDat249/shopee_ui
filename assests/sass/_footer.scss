@@ -133,4 +133,38 @@
       width: 80px;
     }
   }
+
+  &__copyright {
+    font-size: 1.4rem;
+    padding: 40px 0;
+    display: flex;
+    border-top: 1px solid rgba(0,0,0,.1);
+    color: #0000008A;
+    
+    &-content {
+      width: 30%;
+      margin-right: 25px;
+    }
+
+    &-link {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      &-item {
+        padding: 0 5px;
+        border-right: 1px solid #0000008A;
+
+        &--no-border {
+          border: none;
+        }
+        
+        & a {
+          text-decoration: none;
+          color: #0000008A;
+        }
+      }
+    }
+  }
 }
