@@ -230,14 +230,10 @@ html {
   width: 100%;
 }
 
-.grid__row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .grid {
   width: 1200px;
   max-width: 100%;
+  margin: 0 auto;
 }
 .grid__row {
   display: flex;
@@ -251,6 +247,10 @@ html {
 .grid__col-10 {
   width: 83.33334%;
   padding: 0 12px;
+}
+.grid__col-1-5 {
+  width: 20%;
+  padding: 5px;
 }
 
 .width--half {
@@ -275,6 +275,10 @@ html {
 
 .pt-40 {
   padding-top: 40px !important;
+}
+
+.p-5 {
+  padding: 5px;
 }
 
 .seperator {
@@ -1369,6 +1373,89 @@ html {
   flex-direction: column;
   font-size: 1.4rem;
   color: #0000008A;
+}
+.footer__gap {
+  height: 120px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.footer__section {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+}
+.footer__section-col-title {
+  margin: 40px 0 20px;
+  font-size: 1.2rem;
+  color: #0000008A;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.footer__section-col-list {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  list-style: none;
+}
+.footer__section-col-list-item {
+  margin-bottom: 12px;
+}
+.footer__section-col-list-item-link {
+  font-size: 1.2rem;
+  color: #0000008A;
+  text-decoration: none;
+}
+.footer__heading {
+  margin: 40px 0 20px;
+  font-size: 1.2rem;
+  color: #0000008A;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.footer__list {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  list-style: none;
+}
+.footer__item {
+  color: #0000008A;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+.footer__item-link {
+  font-size: 1.2rem;
+  color: #0000008A;
+  text-decoration: none;
+  line-height: 1.6rem;
+}
+.footer__item-link:hover {
+  color: #d13d2a;
+  cursor: pointer;
+}
+.footer__item i {
+  font-size: 1.6rem;
+  color: #000;
+  margin-right: 10px;
+}
+.footer__install {
+  display: flex;
+}
+.footer__qr-code {
+  width: 84px;
+  height: 84px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  margin-right: 15px;
+}
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.footer__logo-item {
+  width: 80px;
 }
 
 /*# sourceMappingURL=app.css.map */

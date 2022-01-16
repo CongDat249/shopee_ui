@@ -19,14 +19,10 @@ html {
    width: 100%;
 }
 
-.grid__row {
-   display: flex;
-   flex-wrap: wrap;
-}
-
 .grid {
    width: 1200px;
    max-width: 100%;
+   margin: 0 auto;
 
    &__row {
       display: flex;
@@ -42,6 +38,11 @@ html {
    &__col-10 {
       width: 83.33334%;
       padding: 0 12px;
+   }
+
+   &__col-1-5 {
+      width: 20%;
+      padding: 5px;
    }
 }
 
@@ -67,6 +68,10 @@ html {
 
 .pt-40 {
    padding-top: 40px !important;
+}
+
+.p-5 {
+   padding: 5px;
 }
 
 .seperator {

@@ -81,3 +81,10 @@ mixin cardDiscount(discount)
   .card__discount 
     .card__discount-value= discount
     span.card__discount-desc Giảm
+
+mixin footerItem(text) 
+  li.footer__item 
+    a(href="#").footer__item-link
+      if (block)
+        block
+      = text 
